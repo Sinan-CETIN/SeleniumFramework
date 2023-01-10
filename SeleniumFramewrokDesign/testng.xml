@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/Sinan/workspace/SeleniumFramewrokDesign/src/test/java/e_commerceWebSite">
+        <classes>
+            <class name="e_commerceWebSite.pageObjects.ErrorValidationsTest">
+                <methods>
+                    <include name="productErrorValidation"/>
+                </methods>
+            </class>
+            <class name="e_commerceWebSite.pageObjects.SubmitOrderTest">
+                <methods>
+                    <include name="submitOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

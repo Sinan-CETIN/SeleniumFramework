@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+
+    <listeners>
+        <listener class-name="e_commerceWebSite.testComponents.Listeners"/>
+    </listeners>
+
+    <test thread-count="5" preserve-order="true" name="ErrorValidationTest">
+        <classes>
+
+            <class name="e_commerceWebSite.pageObjects.ErrorValidationsTest"/>
+
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="SubmitOrderTest">
+        <classes>
+
+            <class name="e_commerceWebSite.pageObjects.SubmitOrderTest"/>
+
+        </classes>
+    </test>
+</suite>
+
+
+
